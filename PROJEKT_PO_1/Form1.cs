@@ -14,7 +14,10 @@ namespace PROJEKT_PO_1
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();        }
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
