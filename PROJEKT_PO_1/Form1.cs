@@ -42,6 +42,7 @@ namespace PROJEKT_PO_1
 
         private void button_panel_admina_Click(object sender, EventArgs e)
         {
+            
             new Form3().Show();
             this.Visible = false;
         }

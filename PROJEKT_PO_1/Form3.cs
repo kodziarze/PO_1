@@ -31,8 +31,12 @@ namespace PROJEKT_PO_1
 
         private void button_zaloguj_admin_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
-            this.Visible = false;
+            string login = Convert.ToString(textBox_login.Text);
+            string haslo = Convert.ToString(textBox_haslo.Text);
+
+                new Form2().Show();
+                this.Visible = false;
+
         }
     }
 }
