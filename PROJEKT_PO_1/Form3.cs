@@ -21,5 +21,18 @@ namespace PROJEKT_PO_1
         {
 
         }
+
+        private void button_menu_logowanie_admina_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+            this.Visible = false;
+
+        }
+
+        private void button_zaloguj_admin_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Visible = false;
+        }
     }
 }

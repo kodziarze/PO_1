@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_user_menu = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox_user_wybor_ilosci = new System.Windows.Forms.ComboBox();
+            this.textBox_user_wpisz_kod = new System.Windows.Forms.TextBox();
+            this.textBox_user_wpisz_nazwe = new System.Windows.Forms.TextBox();
+            this.textBox_user_ilosc_produktu = new System.Windows.Forms.TextBox();
+            this.button_user_zatwierdz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // button_user_menu
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button1.Location = new System.Drawing.Point(145, 323);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 67);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "MENU";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_user_menu.BackColor = System.Drawing.Color.Yellow;
+            this.button_user_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.button_user_menu.Location = new System.Drawing.Point(145, 323);
+            this.button_user_menu.Name = "button_user_menu";
+            this.button_user_menu.Size = new System.Drawing.Size(139, 67);
+            this.button_user_menu.TabIndex = 12;
+            this.button_user_menu.Text = "MENU";
+            this.button_user_menu.UseVisualStyleBackColor = false;
+            this.button_user_menu.Click += new System.EventHandler(this.button_user_menu_Click);
             // 
             // label3
             // 
@@ -81,48 +82,48 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Wpisz ilość produktu";
             // 
-            // comboBox1
+            // comboBox_user_wybor_ilosci
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox_user_wybor_ilosci.FormattingEnabled = true;
+            this.comboBox_user_wybor_ilosci.Items.AddRange(new object[] {
             "militrów",
             "gram"});
-            this.comboBox1.Location = new System.Drawing.Point(714, 224);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 21);
-            this.comboBox1.TabIndex = 16;
+            this.comboBox_user_wybor_ilosci.Location = new System.Drawing.Point(714, 224);
+            this.comboBox_user_wybor_ilosci.Name = "comboBox_user_wybor_ilosci";
+            this.comboBox_user_wybor_ilosci.Size = new System.Drawing.Size(174, 21);
+            this.comboBox_user_wybor_ilosci.TabIndex = 16;
             // 
-            // textBox1
+            // textBox_user_wpisz_kod
             // 
-            this.textBox1.Location = new System.Drawing.Point(499, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
-            this.textBox1.TabIndex = 17;
+            this.textBox_user_wpisz_kod.Location = new System.Drawing.Point(499, 91);
+            this.textBox_user_wpisz_kod.Name = "textBox_user_wpisz_kod";
+            this.textBox_user_wpisz_kod.Size = new System.Drawing.Size(182, 20);
+            this.textBox_user_wpisz_kod.TabIndex = 17;
             // 
-            // textBox2
+            // textBox_user_wpisz_nazwe
             // 
-            this.textBox2.Location = new System.Drawing.Point(499, 161);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 20);
-            this.textBox2.TabIndex = 18;
+            this.textBox_user_wpisz_nazwe.Location = new System.Drawing.Point(499, 161);
+            this.textBox_user_wpisz_nazwe.Name = "textBox_user_wpisz_nazwe";
+            this.textBox_user_wpisz_nazwe.Size = new System.Drawing.Size(182, 20);
+            this.textBox_user_wpisz_nazwe.TabIndex = 18;
             // 
-            // textBox3
+            // textBox_user_ilosc_produktu
             // 
-            this.textBox3.Location = new System.Drawing.Point(499, 225);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 20);
-            this.textBox3.TabIndex = 19;
+            this.textBox_user_ilosc_produktu.Location = new System.Drawing.Point(499, 225);
+            this.textBox_user_ilosc_produktu.Name = "textBox_user_ilosc_produktu";
+            this.textBox_user_ilosc_produktu.Size = new System.Drawing.Size(182, 20);
+            this.textBox_user_ilosc_produktu.TabIndex = 19;
             // 
-            // button2
+            // button_user_zatwierdz
             // 
-            this.button2.BackColor = System.Drawing.Color.Chartreuse;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button2.Location = new System.Drawing.Point(542, 323);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(252, 67);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Zatwierdź produkt";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button_user_zatwierdz.BackColor = System.Drawing.Color.Chartreuse;
+            this.button_user_zatwierdz.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.button_user_zatwierdz.Location = new System.Drawing.Point(542, 323);
+            this.button_user_zatwierdz.Name = "button_user_zatwierdz";
+            this.button_user_zatwierdz.Size = new System.Drawing.Size(252, 67);
+            this.button_user_zatwierdz.TabIndex = 20;
+            this.button_user_zatwierdz.Text = "Zatwierdź produkt";
+            this.button_user_zatwierdz.UseVisualStyleBackColor = false;
             // 
             // Form4
             // 
@@ -130,15 +131,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(999, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button_user_zatwierdz);
+            this.Controls.Add(this.textBox_user_ilosc_produktu);
+            this.Controls.Add(this.textBox_user_wpisz_nazwe);
+            this.Controls.Add(this.textBox_user_wpisz_kod);
+            this.Controls.Add(this.comboBox_user_wybor_ilosci);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_user_menu);
             this.Name = "Form4";
             this.Text = "CUKROMETR 2000 AMG SLS V12 LPG";
             this.ResumeLayout(false);
@@ -148,14 +149,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_user_menu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox_user_wybor_ilosci;
+        private System.Windows.Forms.TextBox textBox_user_wpisz_kod;
+        private System.Windows.Forms.TextBox textBox_user_wpisz_nazwe;
+        private System.Windows.Forms.TextBox textBox_user_ilosc_produktu;
+        private System.Windows.Forms.Button button_user_zatwierdz;
     }
 }

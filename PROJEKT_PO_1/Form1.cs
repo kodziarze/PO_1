@@ -39,5 +39,22 @@ namespace PROJEKT_PO_1
         {
 
         }
+
+        private void button_panel_admina_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Visible = false;
+        }
+
+        private void button_sprawdz_poziom_glukozy_Click(object sender, EventArgs e)
+        {
+            new Form4().Show();
+            this.Visible = false;
+        }
+
+        private void button_zadzwon_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("JUŻ DZWONIE /n ODDYCHAJ GŁĘBOKO");
+        }
     }
 }

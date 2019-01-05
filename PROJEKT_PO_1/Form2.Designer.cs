@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox_admin_wybor_ilosci = new System.Windows.Forms.ComboBox();
+            this.textBox_admin_wpisz_kod = new System.Windows.Forms.TextBox();
+            this.textBox_admin_wpisz_nazwe = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_menu_admin_wprowadzanie = new System.Windows.Forms.Button();
+            this.button_admin_zatwierdz_wprowadzenie = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,31 +69,31 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Wpisz zawartość glukozy na 100                                        produktu";
             // 
-            // comboBox1
+            // comboBox_admin_wybor_ilosci
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox_admin_wybor_ilosci.FormattingEnabled = true;
+            this.comboBox_admin_wybor_ilosci.Items.AddRange(new object[] {
             "militrów",
             "gram"});
-            this.comboBox1.Location = new System.Drawing.Point(464, 224);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 21);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.comboBox_admin_wybor_ilosci.Location = new System.Drawing.Point(464, 224);
+            this.comboBox_admin_wybor_ilosci.Name = "comboBox_admin_wybor_ilosci";
+            this.comboBox_admin_wybor_ilosci.Size = new System.Drawing.Size(174, 21);
+            this.comboBox_admin_wybor_ilosci.TabIndex = 6;
+            this.comboBox_admin_wybor_ilosci.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
-            // textBox1
+            // textBox_admin_wpisz_kod
             // 
-            this.textBox1.Location = new System.Drawing.Point(464, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 7;
+            this.textBox_admin_wpisz_kod.Location = new System.Drawing.Point(464, 108);
+            this.textBox_admin_wpisz_kod.Name = "textBox_admin_wpisz_kod";
+            this.textBox_admin_wpisz_kod.Size = new System.Drawing.Size(174, 20);
+            this.textBox_admin_wpisz_kod.TabIndex = 7;
             // 
-            // textBox2
+            // textBox_admin_wpisz_nazwe
             // 
-            this.textBox2.Location = new System.Drawing.Point(464, 168);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 20);
-            this.textBox2.TabIndex = 8;
+            this.textBox_admin_wpisz_nazwe.Location = new System.Drawing.Point(464, 168);
+            this.textBox_admin_wpisz_nazwe.Name = "textBox_admin_wpisz_nazwe";
+            this.textBox_admin_wpisz_nazwe.Size = new System.Drawing.Size(174, 20);
+            this.textBox_admin_wpisz_nazwe.TabIndex = 8;
             // 
             // label4
             // 
@@ -105,27 +105,28 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "SZANOWNY ADMINISTRATORZE";
             // 
-            // button1
+            // button_menu_admin_wprowadzanie
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button1.Location = new System.Drawing.Point(184, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 67);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "MENU";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_menu_admin_wprowadzanie.BackColor = System.Drawing.Color.Yellow;
+            this.button_menu_admin_wprowadzanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.button_menu_admin_wprowadzanie.Location = new System.Drawing.Point(184, 302);
+            this.button_menu_admin_wprowadzanie.Name = "button_menu_admin_wprowadzanie";
+            this.button_menu_admin_wprowadzanie.Size = new System.Drawing.Size(139, 67);
+            this.button_menu_admin_wprowadzanie.TabIndex = 11;
+            this.button_menu_admin_wprowadzanie.Text = "MENU";
+            this.button_menu_admin_wprowadzanie.UseVisualStyleBackColor = false;
+            this.button_menu_admin_wprowadzanie.Click += new System.EventHandler(this.button_menu_admin_wprowadzanie_Click);
             // 
-            // button2
+            // button_admin_zatwierdz_wprowadzenie
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button2.Location = new System.Drawing.Point(437, 302);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(247, 67);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Zatwierdź produkt";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button_admin_zatwierdz_wprowadzenie.BackColor = System.Drawing.Color.Yellow;
+            this.button_admin_zatwierdz_wprowadzenie.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.button_admin_zatwierdz_wprowadzenie.Location = new System.Drawing.Point(437, 302);
+            this.button_admin_zatwierdz_wprowadzenie.Name = "button_admin_zatwierdz_wprowadzenie";
+            this.button_admin_zatwierdz_wprowadzenie.Size = new System.Drawing.Size(247, 67);
+            this.button_admin_zatwierdz_wprowadzenie.TabIndex = 12;
+            this.button_admin_zatwierdz_wprowadzenie.Text = "Zatwierdź produkt";
+            this.button_admin_zatwierdz_wprowadzenie.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -133,12 +134,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(921, 436);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_admin_zatwierdz_wprowadzenie);
+            this.Controls.Add(this.button_menu_admin_wprowadzanie);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox_admin_wpisz_nazwe);
+            this.Controls.Add(this.textBox_admin_wpisz_kod);
+            this.Controls.Add(this.comboBox_admin_wybor_ilosci);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -155,11 +156,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox_admin_wybor_ilosci;
+        private System.Windows.Forms.TextBox textBox_admin_wpisz_kod;
+        private System.Windows.Forms.TextBox textBox_admin_wpisz_nazwe;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_menu_admin_wprowadzanie;
+        private System.Windows.Forms.Button button_admin_zatwierdz_wprowadzenie;
     }
 }

@@ -31,5 +31,11 @@ namespace PROJEKT_PO_1
         {
 
         }
+
+        private void button_menu_admin_wprowadzanie_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+            this.Visible = false;
+        }
     }
 }

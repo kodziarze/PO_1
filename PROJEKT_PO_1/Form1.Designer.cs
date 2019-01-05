@@ -28,114 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button_zadzwon = new System.Windows.Forms.Button();
+            this.button_sprawdz_poziom_glukozy = new System.Windows.Forms.Button();
+            this.button_panel_admina = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // button_zadzwon
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button1.Location = new System.Drawing.Point(120, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 67);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "MENU";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_zadzwon.BackColor = System.Drawing.Color.Red;
+            this.button_zadzwon.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button_zadzwon.Location = new System.Drawing.Point(833, 107);
+            this.button_zadzwon.Name = "button_zadzwon";
+            this.button_zadzwon.Size = new System.Drawing.Size(311, 225);
+            this.button_zadzwon.TabIndex = 5;
+            this.button_zadzwon.Text = "ZADZWOŃ  POD 999";
+            this.button_zadzwon.UseVisualStyleBackColor = false;
+            this.button_zadzwon.Click += new System.EventHandler(this.button_zadzwon_Click);
             // 
-            // label1
+            // button_sprawdz_poziom_glukozy
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label1.Location = new System.Drawing.Point(81, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Wprowadź Login :";
+            this.button_sprawdz_poziom_glukozy.BackColor = System.Drawing.Color.Lime;
+            this.button_sprawdz_poziom_glukozy.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button_sprawdz_poziom_glukozy.Location = new System.Drawing.Point(437, 107);
+            this.button_sprawdz_poziom_glukozy.Name = "button_sprawdz_poziom_glukozy";
+            this.button_sprawdz_poziom_glukozy.Size = new System.Drawing.Size(311, 225);
+            this.button_sprawdz_poziom_glukozy.TabIndex = 4;
+            this.button_sprawdz_poziom_glukozy.Text = "SPRAWDŹ POZIOM GLUKOZY";
+            this.button_sprawdz_poziom_glukozy.UseVisualStyleBackColor = false;
+            this.button_sprawdz_poziom_glukozy.Click += new System.EventHandler(this.button_sprawdz_poziom_glukozy_Click);
             // 
-            // textBox2
+            // button_panel_admina
             // 
-            this.textBox2.Location = new System.Drawing.Point(303, 199);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label3.Location = new System.Drawing.Point(80, 190);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 29);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Wprowadź hasło :";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Fuchsia;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button2.Location = new System.Drawing.Point(335, 304);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 67);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "ZALOGUJ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label2.Location = new System.Drawing.Point(92, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(385, 29);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "SZANOWNY ADMINISTRATORZE";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(303, 129);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.button_panel_admina.BackColor = System.Drawing.Color.Yellow;
+            this.button_panel_admina.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button_panel_admina.Location = new System.Drawing.Point(35, 107);
+            this.button_panel_admina.Name = "button_panel_admina";
+            this.button_panel_admina.Size = new System.Drawing.Size(311, 225);
+            this.button_panel_admina.TabIndex = 3;
+            this.button_panel_admina.Text = "PANEL ADMINISTRATORA";
+            this.button_panel_admina.UseVisualStyleBackColor = false;
+            this.button_panel_admina.Click += new System.EventHandler(this.button_panel_admina_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(584, 439);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1178, 439);
+            this.Controls.Add(this.button_zadzwon);
+            this.Controls.Add(this.button_sprawdz_poziom_glukozy);
+            this.Controls.Add(this.button_panel_admina);
             this.Name = "Form1";
             this.Text = "Cukrometr 2000 GTR AMG SLS  PANEL ADMINISTRATORA";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button_zadzwon;
+        private System.Windows.Forms.Button button_sprawdz_poziom_glukozy;
+        private System.Windows.Forms.Button button_panel_admina;
     }
 }
 

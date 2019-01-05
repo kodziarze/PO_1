@@ -21,5 +21,11 @@ namespace PROJEKT_PO_1
         {
 
         }
+
+        private void button_user_menu_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+            this.Visible = false;
+        }
     }
 }
