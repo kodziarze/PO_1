@@ -54,7 +54,13 @@ namespace PROJEKT_PO_1
 
         private void button_zadzwon_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("JUŻ DZWONIE /n ODDYCHAJ GŁĘBOKO");
+            MessageBox.Show("JUŻ DZWONIE ODDYCHAJ GŁĘBOKO");
+            MessageBox.Show("IOIOIOIOIOI");
+            MessageBox.Show("IOIOIOIOIOI");
+            MessageBox.Show("IOIOIOIOIOI");
+            MessageBox.Show("IOIOIOIOIOI");
+            MessageBox.Show("IOIOIOIOIOI");
+            MessageBox.Show("JIOIOIOIOIOIO");
         }
     }
 }
