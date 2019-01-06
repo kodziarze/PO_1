@@ -1,6 +1,6 @@
 ﻿namespace PROJEKT_PO_1
 {
-    partial class Form3
+    partial class logowanie_administartora
     {
         /// <summary>
         /// Required designer variable.

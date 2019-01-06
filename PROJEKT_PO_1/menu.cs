@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PROJEKT_PO_1
 {
-    public partial class Form1 : Form
+    public partial class menu : Form
     {
-        public Form1()
+        public menu()
         {
             InitializeComponent();        }
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,13 +43,13 @@ namespace PROJEKT_PO_1
         private void button_panel_admina_Click(object sender, EventArgs e)
         {
             
-            new Form3().Show();
+            new logowanie_administartora().Show();
             this.Visible = false;
         }
 
         private void button_sprawdz_poziom_glukozy_Click(object sender, EventArgs e)
         {
-            new Form4().Show();
+            new sprawdzanie_poziomu().Show();
             this.Visible = false;
         }
 
@@ -62,6 +62,12 @@ namespace PROJEKT_PO_1
             MessageBox.Show("IOIOIOIOIOI");
             MessageBox.Show("IOIOIOIOIOI");
             MessageBox.Show("JIOIOIOIOIOIO");
+            Application.Exit();
+
         }
+        //private void form1_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    Application.Exit();//Bezwarunkowe zamknięcie aplikacji
+        //}
     }
 }

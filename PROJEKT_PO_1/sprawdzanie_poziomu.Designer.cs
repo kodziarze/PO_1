@@ -1,6 +1,6 @@
 ﻿namespace PROJEKT_PO_1
 {
-    partial class Form4
+    partial class sprawdzanie_poziomu
     {
         /// <summary>
         /// Required designer variable.

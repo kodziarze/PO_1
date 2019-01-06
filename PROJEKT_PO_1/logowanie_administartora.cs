@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PROJEKT_PO_1
 {
-    public partial class Form3 : Form
+    public partial class logowanie_administartora : Form
     {
-        public Form3()
+        public logowanie_administartora()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace PROJEKT_PO_1
 
         private void button_menu_logowanie_admina_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new menu().Show();
             this.Visible = false;
 
         }
@@ -69,23 +69,13 @@ namespace PROJEKT_PO_1
         private void button_zaloguj_admin_Click(object sender, EventArgs e)
         {
             // Wbudowane deklaracje stałych do porównania z wartościami wprowadzonymi 
-
-
             string admin = "admin";
-
-            string haslo = "glupiehaslo";
-
-
-
-
+            string haslo = "admin";
             if ((textBox_login.Text == admin) && (textBox_haslo.Text == haslo)) // name.Text => TextBox; password.Text => MaskedTextBox... ewentualnie TextBox
 
             {
-
                 // otwarcie nowego okna po poprawnych danych
-
-
-                new Form2().Show();
+                new wprowadzanie_produktu().Show();
                 this.Visible = false;
             }
             else
@@ -93,7 +83,6 @@ namespace PROJEKT_PO_1
                 MessageBox.Show("Zły login lub hasło", "Szanowny administratorze błędne dane logowania", MessageBoxButtons.OK, MessageBoxIcon.Warning);//MsgBox zle dane logowania
             }
         }
-
     }
 }
 

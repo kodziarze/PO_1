@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PROJEKT_PO_1
 {
-    public partial class Form4 : Form
+    public partial class sprawdzanie_poziomu : Form
     {
-        public Form4()
+        public sprawdzanie_poziomu()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace PROJEKT_PO_1
 
         private void button_user_menu_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new menu().Show();
             this.Visible = false;
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace PROJEKT_PO_1
 {
-    partial class Form1
+    partial class menu
     {
         /// <summary>
         /// Wymagana zmienna projektanta.

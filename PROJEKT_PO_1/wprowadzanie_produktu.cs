@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PROJEKT_PO_1
 {
-    public partial class Form2 : Form
+    public partial class wprowadzanie_produktu : Form
     {
-        public Form2()
+        public wprowadzanie_produktu()
         {
             InitializeComponent();
         }
@@ -34,7 +34,13 @@ namespace PROJEKT_PO_1
 
         private void button_menu_admin_wprowadzanie_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new menu().Show();
+            this.Visible = false;
+        }
+
+        private void button_admin_zatwierdz_wprowadzenie_Click(object sender, EventArgs e)
+        {
+            new  tabela().Show();
             this.Visible = false;
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace PROJEKT_PO_1
 {
-    partial class Form2
+    partial class wprowadzanie_produktu
     {
         /// <summary>
         /// Required designer variable.
@@ -127,6 +127,7 @@
             this.button_admin_zatwierdz_wprowadzenie.TabIndex = 12;
             this.button_admin_zatwierdz_wprowadzenie.Text = "Zatwierdź produkt";
             this.button_admin_zatwierdz_wprowadzenie.UseVisualStyleBackColor = false;
+            this.button_admin_zatwierdz_wprowadzenie.Click += new System.EventHandler(this.button_admin_zatwierdz_wprowadzenie_Click);
             // 
             // Form2
             // 
