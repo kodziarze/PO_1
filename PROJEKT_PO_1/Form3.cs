@@ -28,15 +28,72 @@ namespace PROJEKT_PO_1
             this.Visible = false;
 
         }
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.8.0.0")]
+        internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+        {
+
+            private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
+
+            public static Settings Default
+            {
+                get
+                {
+                    return defaultInstance;
+                }
+            }
+
+            [global::System.Configuration.ApplicationScopedSettingAttribute()]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.Configuration.DefaultSettingValueAttribute("admin")]
+            public string Login
+            {
+                get
+                {
+                    return ((string)(this["Login"]));
+                }
+            }
+
+            [global::System.Configuration.ApplicationScopedSettingAttribute()]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.Configuration.DefaultSettingValueAttribute("1234")]
+            public string Haslo
+            {
+                get
+                {
+                    return ((string)(this["Haslo"]));
+                }
+            }
+        }
 
         private void button_zaloguj_admin_Click(object sender, EventArgs e)
         {
-            string login = Convert.ToString(textBox_login.Text);
-            string haslo = Convert.ToString(textBox_haslo.Text);
+            // Wbudowane deklaracje stałych do porównania z wartościami wprowadzonymi 
+
+
+            string admin = "admin";
+
+            string haslo = "glupiehaslo";
+
+
+
+
+            if ((textBox_login.Text == admin) && (textBox_haslo.Text == haslo)) // name.Text => TextBox; password.Text => MaskedTextBox... ewentualnie TextBox
+
+            {
+
+                // otwarcie nowego okna po poprawnych danych
+
 
                 new Form2().Show();
                 this.Visible = false;
-
+            }
+            else
+            {
+                MessageBox.Show("Zły login lub hasło", "Błędne dane logowania", MessageBoxButtons.OK, MessageBoxIcon.Warning);//MsgBox zle dane logowania
+            }
         }
+
     }
 }
+

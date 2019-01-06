@@ -75,6 +75,7 @@
             this.textBox_haslo.Name = "textBox_haslo";
             this.textBox_haslo.Size = new System.Drawing.Size(174, 20);
             this.textBox_haslo.TabIndex = 13;
+            this.textBox_haslo.UseSystemPasswordChar = true;
             // 
             // textBox_login
             // 
