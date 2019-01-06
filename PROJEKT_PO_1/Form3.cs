@@ -90,7 +90,7 @@ namespace PROJEKT_PO_1
             }
             else
             {
-                MessageBox.Show("Zły login lub hasło", "Błędne dane logowania", MessageBoxButtons.OK, MessageBoxIcon.Warning);//MsgBox zle dane logowania
+                MessageBox.Show("Zły login lub hasło", "Szanowny administratorze błędne dane logowania", MessageBoxButtons.OK, MessageBoxIcon.Warning);//MsgBox zle dane logowania
             }
         }
 
