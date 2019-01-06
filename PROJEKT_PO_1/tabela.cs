@@ -51,7 +51,7 @@ namespace PROJEKT_PO_1
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    var sr = new StreamReader(new FileStream(ofd.FileName, FileMode.Open));
+                    var sr = new StreamReader(new FileStream(ofd.FileName,FileMode.Open));
                     var csv = new CsvReader(sr);
                     jedzenieBindingSource.DataSource = csv.GetRecord<jedzenie>().ToString();
                 }
