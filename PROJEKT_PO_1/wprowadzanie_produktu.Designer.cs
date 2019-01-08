@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button_menu_admin_wprowadzanie = new System.Windows.Forms.Button();
             this.button_admin_zatwierdz_wprowadzenie = new System.Windows.Forms.Button();
+            this.btnBazaDanych = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -121,7 +122,7 @@
             // 
             this.button_admin_zatwierdz_wprowadzenie.BackColor = System.Drawing.Color.Yellow;
             this.button_admin_zatwierdz_wprowadzenie.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button_admin_zatwierdz_wprowadzenie.Location = new System.Drawing.Point(437, 302);
+            this.button_admin_zatwierdz_wprowadzenie.Location = new System.Drawing.Point(614, 302);
             this.button_admin_zatwierdz_wprowadzenie.Name = "button_admin_zatwierdz_wprowadzenie";
             this.button_admin_zatwierdz_wprowadzenie.Size = new System.Drawing.Size(247, 67);
             this.button_admin_zatwierdz_wprowadzenie.TabIndex = 12;
@@ -129,12 +130,23 @@
             this.button_admin_zatwierdz_wprowadzenie.UseVisualStyleBackColor = false;
             this.button_admin_zatwierdz_wprowadzenie.Click += new System.EventHandler(this.button_admin_zatwierdz_wprowadzenie_Click);
             // 
-            // Form2
+            // btnBazaDanych
+            // 
+            this.btnBazaDanych.Location = new System.Drawing.Point(350, 306);
+            this.btnBazaDanych.Name = "btnBazaDanych";
+            this.btnBazaDanych.Size = new System.Drawing.Size(246, 67);
+            this.btnBazaDanych.TabIndex = 22;
+            this.btnBazaDanych.Text = "Wprowadź bazę danych";
+            this.btnBazaDanych.UseVisualStyleBackColor = true;
+            this.btnBazaDanych.Click += new System.EventHandler(this.btnBazaDanych_Click);
+            // 
+            // wprowadzanie_produktu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(921, 436);
+            this.Controls.Add(this.btnBazaDanych);
             this.Controls.Add(this.button_admin_zatwierdz_wprowadzenie);
             this.Controls.Add(this.button_menu_admin_wprowadzanie);
             this.Controls.Add(this.label4);
@@ -144,7 +156,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "wprowadzanie_produktu";
             this.Text = "Wprowadzanie produktu";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
@@ -163,5 +175,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button_menu_admin_wprowadzanie;
         private System.Windows.Forms.Button button_admin_zatwierdz_wprowadzenie;
+        private System.Windows.Forms.Button btnBazaDanych;
     }
 }
