@@ -27,5 +27,11 @@ namespace PROJEKT_PO_1
             new menu().Show();
             this.Visible = false;
         }
+
+        private void btnBazaDanych_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Visible = false;
+        }
     }
 }

@@ -37,6 +37,7 @@
             this.textBox_user_wpisz_nazwe = new System.Windows.Forms.TextBox();
             this.textBox_user_ilosc_produktu = new System.Windows.Forms.TextBox();
             this.button_user_zatwierdz = new System.Windows.Forms.Button();
+            this.btnBazaDanych = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_user_menu
@@ -125,12 +126,23 @@
             this.button_user_zatwierdz.Text = "Zatwierdź produkt";
             this.button_user_zatwierdz.UseVisualStyleBackColor = false;
             // 
-            // Form4
+            // btnBazaDanych
+            // 
+            this.btnBazaDanych.Location = new System.Drawing.Point(290, 323);
+            this.btnBazaDanych.Name = "btnBazaDanych";
+            this.btnBazaDanych.Size = new System.Drawing.Size(246, 67);
+            this.btnBazaDanych.TabIndex = 21;
+            this.btnBazaDanych.Text = "Wprowadź bazę danych";
+            this.btnBazaDanych.UseVisualStyleBackColor = true;
+            this.btnBazaDanych.Click += new System.EventHandler(this.btnBazaDanych_Click);
+            // 
+            // sprawdzanie_poziomu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(999, 450);
+            this.Controls.Add(this.btnBazaDanych);
             this.Controls.Add(this.button_user_zatwierdz);
             this.Controls.Add(this.textBox_user_ilosc_produktu);
             this.Controls.Add(this.textBox_user_wpisz_nazwe);
@@ -140,7 +152,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_user_menu);
-            this.Name = "Form4";
+            this.Name = "sprawdzanie_poziomu";
             this.Text = "CUKROMETR 2000 AMG SLS V12 LPG";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,5 +170,6 @@
         private System.Windows.Forms.TextBox textBox_user_wpisz_nazwe;
         private System.Windows.Forms.TextBox textBox_user_ilosc_produktu;
         private System.Windows.Forms.Button button_user_zatwierdz;
+        private System.Windows.Forms.Button btnBazaDanych;
     }
 }
