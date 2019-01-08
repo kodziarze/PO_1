@@ -75,7 +75,7 @@ namespace PROJEKT_PO_1
 
             {
                 // otwarcie nowego okna po poprawnych danych
-                new wprowadzanie_produktu().Show();
+                new Form2().Show();
                 this.Visible = false;
             }
             else

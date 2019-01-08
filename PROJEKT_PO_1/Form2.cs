@@ -75,5 +75,18 @@ namespace PROJEKT_PO_1
         {
 
         }
+
+        private void button_menu_admin_wprowadzanie_Click(object sender, EventArgs e)
+        {
+            
+                new menu().Show();
+                this.Visible = false;
+            
+        }
+
+        private void zapis_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
