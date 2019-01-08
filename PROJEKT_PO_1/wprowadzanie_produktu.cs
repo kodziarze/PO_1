@@ -38,11 +38,7 @@ namespace PROJEKT_PO_1
             this.Visible = false;
         }
 
-        private void button_admin_zatwierdz_wprowadzenie_Click(object sender, EventArgs e)
-        {
-            new  tabela().Show();
-            this.Visible = false;
-        }
+        
 
         private void btnBazaDanych_Click(object sender, EventArgs e)
         {
