@@ -27,5 +27,20 @@ namespace PROJEKT_PO_1
             new menu().Show();
             this.Visible = false;
         }
+
+        private void comboBox_user_wybor_ilosci_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_user_zatwierdz_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
