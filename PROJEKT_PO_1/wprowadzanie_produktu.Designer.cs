@@ -112,7 +112,7 @@
             // 
             this.button_admin_zatwierdz_wprowadzenie.BackColor = System.Drawing.Color.LawnGreen;
             this.button_admin_zatwierdz_wprowadzenie.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button_admin_zatwierdz_wprowadzenie.Location = new System.Drawing.Point(630, 302);
+            this.button_admin_zatwierdz_wprowadzenie.Location = new System.Drawing.Point(636, 302);
             this.button_admin_zatwierdz_wprowadzenie.Name = "button_admin_zatwierdz_wprowadzenie";
             this.button_admin_zatwierdz_wprowadzenie.Size = new System.Drawing.Size(247, 67);
             this.button_admin_zatwierdz_wprowadzenie.TabIndex = 12;
