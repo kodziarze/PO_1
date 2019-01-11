@@ -87,13 +87,19 @@ namespace PROJEKT_PO_1
 
         public void btnMenu_Click(object sender, EventArgs e)
         {
-            new menu().Show();
+            new wprowadzanie_produktu().Show();
             this.Visible = false;
         }
 
         private void btnWyswietl_Click(object sender, EventArgs e)
         {
             MessageBox.Show(zmienne.dataWords[1]);
+        }
+
+        private void button_menu_admin_wprowadzanie_Click(object sender, EventArgs e)
+        {
+            new menu().Show();
+            this.Visible = false;
         }
     }
 }

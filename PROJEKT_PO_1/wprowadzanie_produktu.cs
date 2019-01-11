@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PROJEKT_PO_1
 {
@@ -40,14 +41,21 @@ namespace PROJEKT_PO_1
 
         private void button_admin_zatwierdz_wprowadzenie_Click(object sender, EventArgs e)
         {
-            new  tabela().Show();
-            this.Visible = false;
+            String produkt_wpis = "\r\n" + textBox_admin_wpisz_kod.Text + ";" + textBox_admin_wpisz_nazwe.Text + ";" + textBox1.Text;
+            File.AppendAllText(zmienne.AdresPliku, produkt_wpis);
+            MessageBox.Show("Twój produkt "+ textBox_admin_wpisz_nazwe.Text + " został zapisany", "Wprowadzanie produktów", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private void btnBazaDanych_Click(object sender, EventArgs e)
         {
             new BazaDanych().Show();
             this.Visible = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

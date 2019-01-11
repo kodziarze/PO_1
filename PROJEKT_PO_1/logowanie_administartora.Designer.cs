@@ -71,17 +71,19 @@
             // 
             // textBox_haslo
             // 
-            this.textBox_haslo.Location = new System.Drawing.Point(600, 213);
+            this.textBox_haslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.textBox_haslo.Location = new System.Drawing.Point(600, 198);
             this.textBox_haslo.Name = "textBox_haslo";
-            this.textBox_haslo.Size = new System.Drawing.Size(174, 20);
+            this.textBox_haslo.Size = new System.Drawing.Size(174, 35);
             this.textBox_haslo.TabIndex = 13;
             this.textBox_haslo.UseSystemPasswordChar = true;
             // 
             // textBox_login
             // 
-            this.textBox_login.Location = new System.Drawing.Point(600, 143);
+            this.textBox_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.textBox_login.Location = new System.Drawing.Point(600, 128);
             this.textBox_login.Name = "textBox_login";
-            this.textBox_login.Size = new System.Drawing.Size(174, 20);
+            this.textBox_login.Size = new System.Drawing.Size(174, 35);
             this.textBox_login.TabIndex = 12;
             // 
             // label1
@@ -106,7 +108,7 @@
             this.button_menu_logowanie_admina.UseVisualStyleBackColor = false;
             this.button_menu_logowanie_admina.Click += new System.EventHandler(this.button_menu_logowanie_admina_Click);
             // 
-            // Form3
+            // logowanie_administartora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,7 +121,7 @@
             this.Controls.Add(this.textBox_login);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_menu_logowanie_admina);
-            this.Name = "Form3";
+            this.Name = "logowanie_administartora";
             this.Text = "MENU";
             this.ResumeLayout(false);
             this.PerformLayout();
