@@ -10,23 +10,25 @@ using System.Windows.Forms;
 
 namespace PROJEKT_PO_1
 {
-    public partial class Form2 : Form
+    public partial class BazaDanych : Form
     {
 
        
-        public Form2()
+        public BazaDanych()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
             txtFilePath.Text = openFileDialog1.FileName;
+            //string plik = "C:\\Users\\DELL\\Desktop\\xd2.csv";
             BindDataCSV(txtFilePath.Text);
+            zmienne.AdresPliku = txtFilePath.Text;
         }
 
-        private void BindDataCSV(string filePath)
+        public void BindDataCSV(string filePath)
         {
             DataTable dt = new DataTable();
             string[] lines = System.IO.File.ReadAllLines(filePath);
@@ -47,15 +49,17 @@ namespace PROJEKT_PO_1
 
                 for (int r = 1; r < lines.Length; r++)
                 {
-                    string[] dataWords = lines[r].Split(';');
+                    zmienne.dataWords = lines[r].Split(';');
                     DataRow dr = dt.NewRow();
                     int columIndex = 0;
-                    foreach (string headerWord in headerLabels)
+                    foreach (string headerWord in headerLabels) // XD jak zapisać pojedyncze tablice
                     {
 
-                        dr[headerWord] = dataWords[columIndex++];
+                        dr[headerWord] = zmienne.dataWords[columIndex++];
+                        //string[] tabela = zmienne.dataWords;
+                        //new int []  = new int ;
                     }
-
+                    //label1.Text = zmienne.dataWords[3];
                     dt.Rows.Add(dr);
                 }
 
@@ -74,6 +78,22 @@ namespace PROJEKT_PO_1
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void btnMenu_Click(object sender, EventArgs e)
+        {
+            new menu().Show();
+            this.Visible = false;
+        }
+
+        private void btnWyswietl_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(zmienne.dataWords[1]);
         }
     }
 }

@@ -69,8 +69,8 @@ namespace PROJEKT_PO_1
         private void button_zaloguj_admin_Click(object sender, EventArgs e)
         {
             // Wbudowane deklaracje stałych do porównania z wartościami wprowadzonymi 
-            string admin = "admin";
-            string haslo = "admin";
+            string admin = "a";
+            string haslo = "a";
             if ((textBox_login.Text == admin) && (textBox_haslo.Text == haslo)) // name.Text => TextBox; password.Text => MaskedTextBox... ewentualnie TextBox
 
             {

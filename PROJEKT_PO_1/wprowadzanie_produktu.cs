@@ -46,7 +46,7 @@ namespace PROJEKT_PO_1
 
         private void btnBazaDanych_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            new BazaDanych().Show();
             this.Visible = false;
         }
     }
