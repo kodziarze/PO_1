@@ -46,9 +46,11 @@ namespace PROJEKT_PO_1
                 }
 
                 // for data 
-
+                zmienne.liczba = 0;
                 for (int r = 1; r < lines.Length; r++)
                 {
+                    
+                    zmienne.liczba++;
                     zmienne.dataWords = lines[r].Split(';');
                     DataRow dr = dt.NewRow();
                     int columIndex = 0;

@@ -11,5 +11,6 @@ namespace PROJEKT_PO_1
         public static string[] dataWords;
         public static int KodKresk;
         public static string AdresPliku;
+        public static int liczba;
     }
 }

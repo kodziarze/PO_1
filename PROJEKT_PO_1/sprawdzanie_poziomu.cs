@@ -36,13 +36,21 @@ namespace PROJEKT_PO_1
 
         private void button_user_zatwierdz_Click(object sender, EventArgs e)
         {
-            //if ()
+            double kodkresk = Convert.ToDouble(textBox_user_wpisz_kod.Text);
+            if (kodkresk > zmienne.liczba)
+            {
+                MessageBox.Show("Kod kreskowy nie jest przypisany do żadnego produktu");
+            }
+            else //(kodkresk<=zmienne.liczba)
+            {
+                BindDataCSV(zmienne.AdresPliku);
+            }
             //{
 
             //}
                //openFileDialog1.ShowDialog();
             //txtFilePath.Text = openFileDialog1.FileName;
-            BindDataCSV(zmienne.AdresPliku);
+            //BindDataCSV(zmienne.AdresPliku);
         }
 
         public void BindDataCSV(string filePath)
