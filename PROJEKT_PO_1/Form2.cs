@@ -12,7 +12,7 @@ namespace PROJEKT_PO_1
 {
     public partial class BazaDanych : Form
     {
-
+        //elo filip jak to czytasz to znaczy że marnujesz czas
        
         public BazaDanych()
         {
