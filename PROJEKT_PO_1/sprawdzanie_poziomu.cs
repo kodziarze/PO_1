@@ -36,7 +36,11 @@ namespace PROJEKT_PO_1
 
         private void button_user_zatwierdz_Click(object sender, EventArgs e)
         {
-            //openFileDialog1.ShowDialog();
+            //if ()
+            //{
+
+            //}
+               //openFileDialog1.ShowDialog();
             //txtFilePath.Text = openFileDialog1.FileName;
             BindDataCSV(zmienne.AdresPliku);
         }

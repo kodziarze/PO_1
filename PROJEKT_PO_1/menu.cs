@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -49,8 +50,17 @@ namespace PROJEKT_PO_1
 
         private void button_sprawdz_poziom_glukozy_Click(object sender, EventArgs e)
         {
-            new sprawdzanie_poziomu().Show();
-            this.Visible = false;
+            if (!File.Exists(zmienne.AdresPliku))
+            {
+                MessageBox.Show("Wprowadź baze danych", "Ostrzeżenie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (File.Exists(zmienne.AdresPliku))
+            {
+                new sprawdzanie_poziomu().Show();
+                this.Visible = false;
+            }
+
+            
         }
 
         private void button_zadzwon_Click(object sender, EventArgs e)

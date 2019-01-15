@@ -59,6 +59,7 @@ namespace PROJEKT_PO_1
                         //string[] tabela = zmienne.dataWords;
                         //new int []  = new int ;
                     }
+                    
                     //label1.Text = zmienne.dataWords[3];
                     dt.Rows.Add(dr);
                 }
